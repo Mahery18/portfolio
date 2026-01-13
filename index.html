@@ -187,7 +187,7 @@
     </div>
   </div>
 
-    <!-- Projet Harmonie -->
+  <!-- Projet Harmonie -->
   <div class="flex flex-col items-center space-y-2">
     <a href="http://localhost/Harmonie/index.php" target="_blank" 
        class="w-64 h-40 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition relative flex items-center justify-center">
@@ -283,6 +283,11 @@
      class="bg-red-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transform hover:scale-105 transition">
     Fiche descriptive
   </a>
+
+  <a href="" 
+     class="bg-red-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transform hover:scale-105 transition">
+    Tableau de synthêse
+  </a>
 </div>
 
 
@@ -327,7 +332,7 @@
       section.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
       observer.observe(section);
     });
-
+    
     const skillObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
