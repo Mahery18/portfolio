@@ -32,22 +32,75 @@
     </nav>
   </header>
 
-  <main class="pt-24 space-y-24 max-w-4xl mx-auto px-4">
-    <section id="about" class="animate-fade-in" style="margin-top: 3rem;">
-      <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
-      <p>Étudiant motivé et sérieux, avec de solides bases en développement, et bases de données. À l’aise avec differents outils de développement. Curieux, autonome et assidu, je m’investis pleinement dans chaque mission confiée, avec un fort intérêt pour l’apprentissage continu. </p>
+<main class="pt-24 space-y-24 max-w-4xl mx-auto px-4">
+  <section id="about" class="relative py-20 px-6 overflow-hidden">
 
-      <!-- Bouton pour voir et télécharger le CV -->
-      <div class="mt-6">
-        <a href="CV_Mahery.pdf"
-           class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded transition">
-          Curriculum Vitae
-        </a>
+    <!-- Background futuriste -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 opacity-95"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(0,255,255,0.15),transparent_40%)]"></div>
+
+    <div class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- PHOTO + CV -->
+      <div class="flex flex-col items-center md:items-start group">
+
+        <!-- Conteneur image -->
+        <div class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform transition duration-500 group-hover:scale-105">
+          
+          <!-- Glow effect -->
+          <div class="absolute inset-0 bg-cyan-500 opacity-20 blur-2xl group-hover:opacity-40 transition"></div>
+          
+          <img src="ta-photo.jpg" alt="Photo"
+              class="relative w-full h-full object-cover rounded-2xl border border-cyan-400/30">
+        </div>
+
+        <!-- Bouton CV -->
+        <div class="mt-6">
+          <a href="CV_Mahery.pdf"
+            class="relative inline-block px-6 py-3 font-semibold text-cyan-400 border border-cyan-400 rounded-lg overflow-hidden transition duration-300 hover:text-black hover:bg-cyan-400 shadow-lg hover:shadow-cyan-400/50">
+            
+            <span class="relative z-10">Curriculum Vitae</span>
+            
+            <!-- Animation background -->
+            <span class="absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition duration-300"></span>
+          </a>
+        </div>
+
       </div>
 
-    </section>
+      <!-- TEXTE -->
+      <div class="text-gray-300 space-y-6 animate-fade-in-right">
 
-    <section id="skills" class="animate-fade-in hover-section">
+        <h2 class="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          À propos de moi
+        </h2>
+
+        <p class="leading-relaxed text-lg text-gray-400 hover:text-gray-200 transition duration-300">
+          Étudiant motivé et sérieux, avec de solides bases en développement, et bases de données. À l’aise avec différents outils de développement, je m’adapte facilement à de nouveaux environnements techniques et méthodologiques.
+        </p>
+
+        <p class="leading-relaxed text-lg text-gray-400 hover:text-gray-200 transition duration-300">
+          Passionné par le développement logiciel, je m’intéresse particulièrement à la conception d’applications performantes, intuitives et évolutives. J’accorde une grande importance à la qualité du code, aux bonnes pratiques et à l’optimisation des performances.
+        </p>
+
+        <p class="leading-relaxed text-lg text-gray-400 hover:text-gray-200 transition duration-300">
+          Curieux, autonome et assidu, je m’investis pleinement dans chaque mission confiée. J’aime relever de nouveaux défis techniques et approfondir mes connaissances à travers des projets concrets et une veille technologique constante.
+        </p>
+
+        <p class="leading-relaxed text-lg text-gray-400 hover:text-gray-200 transition duration-300">
+          Mon objectif est de devenir un développeur polyvalent, capable de concevoir des solutions innovantes et de contribuer efficacement à des projets collaboratifs au sein d’équipes dynamiques.
+        </p>
+
+        <!-- Ligne décorative futuriste -->
+        <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="skills" class="animate-fade-in hover-section">
       <h2 class="text-3xl font-bold mb-8">Compétences en technologie</h2>
       <div class="space-y-6">
         <div class="flex items-center justify-between">
